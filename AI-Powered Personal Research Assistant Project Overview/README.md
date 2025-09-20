@@ -376,7 +376,7 @@ For questions, issues, or contributions, please:
 
 ---
 
-**Built with ❤️ by Manus AI**
+
 
 *Empowering knowledge discovery through intelligent document interaction*
 
