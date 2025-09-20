@@ -1,0 +1,39 @@
+AI-Powered Personal Research Assistant: Technical Overview
+
+Introduction
+The AI-powered personal research assistant is a sophisticated system that combines document processing, vector embeddings, and large language models to create an intelligent knowledge base. This system allows users to upload various document formats and interact with their content through natural language queries.
+
+Key Components
+
+1. Document Processing Engine
+The document processing engine handles multiple file formats including PDF, DOCX, and plain text files. It extracts text content and prepares it for further processing. The system uses libraries like PyPDF2 for PDF processing and python-docx for Word documents.
+
+2. Text Chunking Strategy
+Documents are divided into manageable chunks of approximately 1000 characters with 200-character overlap. This chunking strategy ensures that context is preserved across chunk boundaries while maintaining optimal size for embedding generation.
+
+3. Vector Embeddings
+The system uses OpenAI's text-embedding-ada-002 model to generate high-dimensional vector representations of text chunks. These embeddings capture semantic meaning and enable similarity-based retrieval.
+
+4. Vector Database
+FAISS (Facebook AI Similarity Search) is used as the vector database for efficient similarity search. The system normalizes embeddings and uses inner product similarity for retrieval.
+
+5. Retrieval-Augmented Generation (RAG)
+The RAG pipeline combines document retrieval with language model generation. When a user asks a question, the system:
+- Generates an embedding for the query
+- Searches for similar document chunks
+- Constructs a prompt with retrieved context
+- Generates an answer using GPT-4
+- Provides citations from source documents
+
+Technical Architecture
+The system follows a client-server architecture with a React frontend and Flask backend. The frontend provides an intuitive interface for document upload and chat interaction, while the backend handles document processing, embedding generation, and RAG operations.
+
+Benefits
+- Accurate answers with source citations
+- Support for multiple document formats
+- Scalable vector search capabilities
+- User-friendly web interface
+- Real-time chat interaction
+
+This research assistant demonstrates the practical application of modern AI technologies in knowledge management and information retrieval systems.
+
