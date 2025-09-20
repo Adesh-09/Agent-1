@@ -1,8 +1,8 @@
 # AI-Powered Personal Research Assistant: Technical Deep Dive
 
-**Author:** Manus AI  
+
 **Date:** September 2024  
-**Project:** Portfolio-Worthy RAG Implementation
+**Project:** RAG Implementation
 
 ## Executive Summary
 
